@@ -1,0 +1,11 @@
+require('plugins')
+require('options')
+require('treesitter-config')
+require('icons')
+--require('bufferline')
+
+vim.cmd('colorscheme PaperColor')
+vim.cmd[[
+let g:airline_powerline_fonts = 1
+let g:airline_section_z = "%3p%% %l:%c"
+]]
