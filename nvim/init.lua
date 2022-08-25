@@ -20,8 +20,6 @@ let g:airline_theme='base16_grayscale_light'
 let g:airline_powerline_fonts = 1
 let g:airline_section_z = "%3p%% %l:%c"
 let g:airline#extensions#whitespace#enabled = 0
-nnoremap <leader>tl :<c-u>exec v:count.'Tclear'<cr>
-let g:ycm_global_ycm_extra_conf = '~/.local/share/nvim/site/pack/packer/start/YouCompleteMe/ycm_extra_conf.py'
 
 autocmd FileType c,cpp,php nnoremap <F5> :!download_prob.py<CR>
 autocmd FileType c,cpp,php nnoremap <F10> :term rn %:r<CR>
