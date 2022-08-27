@@ -40,4 +40,6 @@ if system('uname -r') =~ "microsoft"
   autocmd TextYankPost * :call system('/mnt/c/windows/system32/clip.exe ',@")
   augroup END
 endif
+
+let g:yankring_clipboard_monitor=0
 ]]
