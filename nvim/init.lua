@@ -34,12 +34,10 @@ augroup numbertoggle
     autocmd BufLeave,FocusLost,InsertEnter * set nornu
 augroup END
 
-if system('uname -r') =~ "microsoft"
-  augroup Yank
-  autocmd!
-  autocmd TextYankPost * :call system('/mnt/c/windows/system32/clip.exe ',@")
-  augroup END
-endif
-
-let g:yankring_clipboard_monitor=0
+"if system('uname -r') =~ "microsoft"
+"  augroup Yank
+"  autocmd!
+"  autocmd TextYankPost * :call system('/mnt/c/windows/system32/clip.exe ',@")
+"  augroup END
+"endif
 ]]
